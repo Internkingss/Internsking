@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Details - InternKings</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .details-form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+         .details-form-container h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="home.html" class="navbar-brand">InternKings</a>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <div class="details-form-container">
+            <h1>Enter Your Details</h1>
+            <p style="text-align: center; color: #555;">Fill this out to get accurate internship recommendations.</p>
+            <form id="detailsForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Preferred Location</label>
+                    <select id="location" required>
+                         <option value="">-- Select a City --</option>
+                        <optgroup label="Metropolitan Cities">
+                            <option value="mumbai">Mumbai</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="bangalore">Bangalore</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="ahmedabad">Ahmedabad</option>
+                            <option value="chennai">Chennai</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="pune">Pune</option>
+                        </optgroup>
+                        <optgroup label="Tier 2 Cities & Others">
+                            <option value="agra">Agra</option>
+                            <option value="ajmer">Ajmer</option>
+                            <option value="bhopal">Bhopal</option>
+                            <option value="bhubaneswar">Bhubaneswar</option>
+                            <option value="chandigarh">Chandigarh</option>
+                            <option value="coimbatore">Coimbatore</option>
+                            <option value="dehradun">Dehradun</option>
+                            <option value="guwahati">Guwahati</option>
+                            <option value="indore">Indore</option>
+                            <option value="jaipur">Jaipur</option>
+                            <option value="kanpur">Kanpur</option>
+                            <option value="kochi">Kochi</option>
+                            <option value="lucknow">Lucknow</option>
+                            <option value="ludhiana">Ludhiana</option>
+                            <option value="nagpur">Nagpur</option>
+                            <option value="nashik">Nashik</option>
+                            <option value="patna">Patna</option>
+                            <option value="raipur">Raipur</option>
+                            <option value="ranchi">Ranchi</option>
+                            <option value="surat">Surat</option>
+                            <option value="thiruvananthapuram">Thiruvananthapuram</option>
+                            <option value="vadodara">Vadodara</option>
+                            <option value="visakhapatnam">Visakhapatnam</option>
+                        </optgroup>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interest">Field of Interest</label>
+                    <select id="interest" required>
+                        <option value="">-- Select an Interest --</option>
+                        <option value="tech">Tech</option>
+                        <option value="healthcare">HealthCare</option>
+                        <option value="finance">Finance</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="qualification">Highest Qualification</label>
+                    <input type="text" id="qualification" placeholder="e.g., B.Tech in CS, B.Com, etc." required>
+                </div>
+                <button type="submit" class="btn">Find My Internship</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="details.js"></script>
+</body>
+</html>
